@@ -15,7 +15,7 @@ public class orderTestRunner extends Setup {
     public void doLoginWithValidCred() throws InterruptedException {
         LoginPage loginPage=new LoginPage(driver);
         loginPage.loginEntryPage();
-        Thread.sleep(500);
+        Thread.sleep(1000);
 
     }
 
@@ -23,7 +23,7 @@ public class orderTestRunner extends Setup {
     public void doOrderCreation() throws InterruptedException {
         SearchPage orderPage=new SearchPage(driver);
         orderPage.orderCreatePage();
-        Thread.sleep(500);
+        Thread.sleep(1000);
         String TextExpected=driver.findElement(By.xpath("//h1[text()='Bluetooth headphone']")).getText();
         String TextActual="Bluetooth headphone";
         Assert.assertTrue(TextActual.contains(TextExpected));
