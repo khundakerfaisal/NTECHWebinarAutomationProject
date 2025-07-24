@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SelectItem {
-    @FindBy(xpath = "//a[@data-spm-anchor-id='a2a0e.searchlist.list.1']")
+    @FindBy(xpath = "//div[@data-qa-locator='product-item'][1]")
     WebElement selectItem;
 
     public SelectItem(WebDriver driver){
