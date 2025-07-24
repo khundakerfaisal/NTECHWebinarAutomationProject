@@ -22,7 +22,7 @@ public class AddToCart {
     @FindBy(className = "next-dialog-body")
     List<WebElement> dialogueBox;
 
-    @FindBy(className = "next-icon")
+    @FindBy(className = "next-dialog-close")
     List<WebElement> closeButton;
 
     @FindBy(xpath = "//input[@type='checkbox']")
@@ -46,7 +46,7 @@ public class AddToCart {
 
 
 //        List<WebElement> closeButton = driver.findElements(By.className("next-icon"));
-        closeButton.get(4).click();
+        closeButton.get(0).click();
         Thread.sleep(500);
 
 

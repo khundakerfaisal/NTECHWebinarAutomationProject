@@ -10,8 +10,6 @@ repositories {
 }
 
 dependencies {
-//    testImplementation platform('org.junit:junit-bom:5.9.1')
-//    testImplementation 'org.junit.jupiter:junit-jupiter'
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     implementation("org.seleniumhq.selenium:selenium-java:4.16.1")
     // https://mvnrepository.com/artifact/org.testng/testng
@@ -23,6 +21,6 @@ dependencies {
 
 test {
     useTestNG(){
-//        suites "./src/test/resources/regretionSuite.xml";
+        suites "./src/test/resources/darazRegrationSuite.xml";
     }
 }

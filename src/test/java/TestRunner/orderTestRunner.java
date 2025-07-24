@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class orderTestRunner extends Setup {
 
-    @Test(priority = 1,description="Login With Valid Credential")
+    @Test(priority = 1,description="Login Successfully Before Order")
     public void doLoginWithValidCred() throws InterruptedException {
         LoginPage loginPage=new LoginPage(driver);
         loginPage.loginEntryPage();
