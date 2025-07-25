@@ -40,12 +40,10 @@ public class AddToCart {
         Thread.sleep(500);
 
 
-//        List<WebElement> dialogueBox = driver.findElements(By.className("next-dialog-body"));
         dialogueBox.get(0).click();
         Thread.sleep(1000);
 
 
-//        List<WebElement> closeButton = driver.findElements(By.className("next-icon"));
         closeButton.get(0).click();
         Thread.sleep(500);
 
